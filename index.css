@@ -1,0 +1,32 @@
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("/immagini/IChing_Monete.jpg");
+    min-height: 75%;
+}
+
+@keyframes gira{
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(360deg);}
+}
+
+.logo_img{
+  width: 5%;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  animation-name: gira;
+  animation-duration: 15s;
+  animation-direction: alternate;
+  animation-iteration-count:infinite;
+}
+
+.menu {
+    display: none;
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="/css/w3.css">
+    <link rel="stylesheet" href="/css/iching.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/grafica.css">
+    <title>I Ching</title>
+
+</head>
+
+<body>
+    <header class="w3-container" style="background:linear-gradient(#672e3b, #800000);">
+        <div class="w3-row">
+            <div class="w3-half">
+                <h1 onclick="javascript:location.href='../index.html'">I Ching</h1>
+               <div> 
+                 <button class="w3-button w3-khaki" id="lanciaMonete1" onclick="scriviLinea1()">Lancia le Monete</button>
+                 <button class="w3-button w3-khaki" id="lanciaMonete2" onclick="scriviLinea2()" style="display:none">Lancia ancora</button>
+                 <button class="w3-button w3-khaki" id="lanciaMonete3" onclick="scriviLinea3()" style="display:none">Lancia ancora</button>
+                 <button class="w3-button w3-khaki" id="lanciaMonete4" onclick="scriviLinea4()" style="display:none">Lancia ancora</button>
+                 <button class="w3-button w3-khaki" id="lanciaMonete5" onclick="scriviLinea5()" style="display:none">Lancia ancora</button>
+                 <button class="w3-button w3-khaki" id="lanciaMonete6" onclick="scriviLinea6()" style="display:none">Ultimo lancio</button>
+              </div>
+                
+            </div>
+            <div class="w3-half">
+                <p style="color: rgb(248, 224, 6);" id="risultatoIdeogramma"></p>
+            </div>
+
+        </div>
+    </header>
+  
+    <div class="w3-row w3-container">
+
+
+        <div class="w3-row w3-container">
+          
+          <div class="w3-half w3-container">
+                <p id="immagini" style="font-size: 1.8vw;"></p>
+                <div class="w3-card-4 w3-container w3-gray">
+                    <p id="att"></p>
+                    <p class="w3-container">
+                        <a id="attuale" href="" target="_blank"></a>
+                    </p>
+                    <hr>
+                    <p id="fut"></p>
+                    <p class="w3-container">
+                        <a id="futura" href="" target="_blank"></a>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="w3-half">
+                <br>
+                <div class="minibordo-nero w3-center">
+                    <p> </p>
+                    <div><img src="" id="sei" class="linea" /></div>
+                    <p> </p>
+                    <div><img src="" id="cinque" class="linea" /></div>
+                    <p> </p>
+                    <div><img src="" id="quattro" class="linea" /></div>
+                    <p> </p>
+                    <div><img src="" id="tre" class="linea" /></div>
+                    <p> </p>
+                    <div><img src="" id="due" class="linea" /></div>
+                    <p> </p>
+                    <div><img src="" id="uno" class="linea" /></div>
+                    <p> </p>
+                </div>
+
+
+            </div>
+
+            
+        </div>
+    </div>
+  <br><br>
+    <script src="/js/ichingProgramma.js"></script>
+</body>
+
+<footer id="piedipagina" class="w3-row" style="background:linear-gradient(#672e3b, #800000);">
+    <h6 class="w3-half">I-Ching a cura di Rodolfo Giacalone
+    </h6>
+  
+</footer>
+
+</html>

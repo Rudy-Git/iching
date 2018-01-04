@@ -1,0 +1,258 @@
+/*********************************************
+ *
+ * CSS per Slides - Rodolfo Giacalone
+ *
+ *********************************************/
+
+@font-face {
+    font-family: myFont;
+    src: url(fonts/b_light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: myChewy;
+  src: url(fonts/Chewy.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: myTangerine;
+  src: url(fonts/Tangerine.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: myArchitects;
+  src: url(fonts/ArchitectsDaughter.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: myIndie;
+  src: url(fonts/IndieFlower.ttf) format('truetype');
+}
+
+/****Text-shadow multipla****************/
+
+.ts{
+    color:#e6ff7f;
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px black;
+}
+
+/***************************************/
+
+@keyframes gira{
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(360deg);}
+}
+
+.remark-slide:before {
+    content: url(img/logo.png);
+    padding: 7px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    animation-name: gira;
+    animation-duration: 15s;
+    animation-direction: alternate;
+    animation-iteration-count: 1;
+}
+
+.remark-slide:after {
+    content: "Lezioni di Agopuntura - Rodolfo Giacalone";
+    font-family: myFont, "b_light";
+    font-size: 12px;
+    position: fixed;
+    bottom: 9px;
+    left: 40px;
+    padding: 5px;
+    color: #00007F;
+    text-shadow: 2px 2px 2px #aaa;
+}
+
+
+/*********************************************
+ *
+ * Box Piccolo - Bordo completo
+ *
+ *********************************************/
+
+.minibordo-giallo{
+    background-color:snow;
+    border: 3px solid #ffff0b;
+    padding:10px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.minibordo-rosso{
+    background-color:snow;
+    border: 3px solid #EA4335;
+    padding:10px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.minibordo-arancio{
+    background-color:snow;
+    border: 3px solid #FF9900;
+    padding:10px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.minibordo-nero{
+    background-color:snow;
+    border: 3px solid #5a5a5a;
+    padding:10px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.minibordo-verde{
+    background-color:snow;
+    border: 3px solid #34A853;
+    padding:10px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.minibordo-android{
+    background-color:snow;
+    border: 3px solid #A4C639;
+    padding:10px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.minibordo-azul{
+    background-color:snow;
+    border: 3px solid #4285F4;
+    padding:10px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+.minibordo-blue{
+    background-color:snow;
+    border: 3px solid #33338b;
+    padding:10px;
+    box-shadow: 5px 5px 10px #000;
+}
+
+/*********************************************
+ *            Varie
+ *
+ * 
+ *********************************************/
+
+.card-p{
+    padding: 12px;
+}
+
+.lista-greca{
+    list-style-type: lower-greek;
+}
+
+.prima{
+    z-index: 1;
+}
+
+.sotto-il-logo{
+    position: absolute;
+    left: 35px;
+}
+
+#slide-(name: nomeDia){}
+
+/*********************************************
+ *        c centra il testo e padding
+ *        p padding senza centrare
+ *        l text-align:left
+ *        ib display:inline-block
+ *        no-pad senza padding
+ *        
+ *********************************************/
+
+.c{
+    text-align: center;
+    padding: 15px;
+}
+
+.l{
+    text-align: left;
+}
+
+.p{
+    padding: 15px;
+}
+
+.m{
+    margin: 2px;
+}
+
+.ib{
+    width: auto;
+    left: auto;
+    display: inline-block;
+}
+
+.no-pad{
+    padding: 0px;
+}
+
+.t{
+    position: absolute;
+    z-index:1;
+    top:140px;
+    right: 30px;
+    left: 30px;
+}
+
+.top{
+    position: relative;
+    z-index:1;
+    top:50px;
+    right: 30px;
+    left: 30px;
+}
+
+.rsotto{
+    position: relative;
+    bottom: 2vw;
+}
+
+/******************************************** *
+ *            Centra il box
+ *
+ * 
+ *********************************************/
+
+
+.centrato{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+
+.adestra{
+    position: relative;
+    left: 45%;
+    width: 55%;
+}
+
+/*********************************************
+ *
+ * Animazioni
+ *
+ *********************************************/
+
+.trans{
+    transform: scale(0.2, 0.2);
+    transform-origin: bottom;
+    transition: transform;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.trans:hover{
+    transform: scale(1, 1);
+}
+
+.gira-gira{
+    animation-name: gira;
+    animation-duration: 4s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
